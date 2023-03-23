@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       //definimos la ruta cambiando
       debugShowCheckedModeBanner: false,
       title: 'WAR CORPORATION',
-      initialRoute: 'login',
+      initialRoute: 'ProductRegistrationScreen',
       onGenerateRoute: (settings) {
         final route =
         routes.firstWhere((route) => route['path'] == settings.name);
