@@ -1,13 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:war_corporation_microservices/pages/login/login_page.dart';
-import 'package:war_corporation_microservices/pages/partner/categories/create/parternet_categories_create_screen.dart';
-import 'package:war_corporation_microservices/pages/partner/categories/create/partner_categories_create_page.dart';
-import 'package:war_corporation_microservices/pages/partner/home/partner_home_page.dart';
-import 'package:war_corporation_microservices/pages/partner/orders/list/partner_orders_list_page.dart';
-import 'package:war_corporation_microservices/pages/partner/products/create/partner_products_create_page.dart';
-import 'package:war_corporation_microservices/pages/partner/products/create/partner_products_create_screen.dart';
-import 'package:war_corporation_microservices/pages/partner/profile/info/partner_profile_info_page.dart';
-import 'package:war_corporation_microservices/pages/register/register_page.dart';
+
+import 'package:war_corporation_microservices/pages/widgets/background_page.dart';
+import 'package:war_corporation_microservices/routes/router_exports.dart';
 
 final List<Map<String, dynamic>> routes = [
   {
@@ -44,9 +37,14 @@ final List<Map<String, dynamic>> routes = [
     'path': 'PartnerCategoriesCreateScreen',
     'page': (BuildContext context) => PartnerCategoriesCreateScreen(),
   },
+  /// todo: fernando herrera
     {
     'path': 'ProductsScreen',
     'page': (BuildContext context) => ProductsScreen(),
+  },
+  {
+    'path': 'BackgroundPage',
+    'page': (BuildContext context) => BackgroundPage(),
   },
 
 
