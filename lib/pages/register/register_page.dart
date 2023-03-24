@@ -19,9 +19,10 @@ class RegisterPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Logo(
+                    agradecimiento: '¡BIENVENIDO!',
                     titulo: 'REGISTRO', 
                     imageurl: 'assets/register.png',
-                    imgDimention: 100,
+                    imgDimention: 120,
                     ), 
 
                   _FormState(), 

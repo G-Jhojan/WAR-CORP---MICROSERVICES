@@ -1,61 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:war_corporation_microservices/pages/widgets/background_page.dart';
 import 'package:war_corporation_microservices/ui_ux/fonts_styles.dart';
 import 'package:war_corporation_microservices/ui_ux/input_decorations.dart';
 
-class PartnerProductsCreatePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return  Scaffold(
-      body:Stack(
-        children: [
-           const BackgroundPage(imagePath: 'assets/product.png'),// ahora si estamos abajo del boxForm
-           SingleChildScrollView(
-            child: Column(
-              children: [
-                const SizedBox(height: 250,),
-                _BoxForm(titulo: 'NUEVO PRODUCTO'),
-
-              ],
-            )
-          ),// para que pueda moverse por si solo
-        ],
-      )
-    );
-  }
-}
-
-class _BoxForm extends StatelessWidget {
-  final EstiloTextos estilo = EstiloTextos();
-  final String titulo;
-
-   _BoxForm({super.key, required this.titulo});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        children: [
-          _CardBox(titulo: titulo),
-          const SizedBox(height: 30,),
-          const Text('crear una nueva cuenta')
-
-        ],
-      )
-    );
-  }
-}
-
-
-
-class _CardBox extends StatelessWidget {
-  //en los campos de edicion de texto
+class CardBox extends StatelessWidget {
   final EstiloTextos estilo = EstiloTextos();
 
   final String? titulo;
 
-  _CardBox({super.key, this.titulo});
+  CardBox({super.key, this.titulo});
 
   @override
   Widget build(BuildContext context) {

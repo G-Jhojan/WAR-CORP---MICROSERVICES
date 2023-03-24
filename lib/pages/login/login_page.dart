@@ -19,6 +19,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Logo(
+                    agradecimiento: '¡HOLA, UN GUSTO VERTE!',
                     titulo: 'W.A.R CORP.®', 
                     imageurl: 'assets/logo_i.png',
                     imgDimention: 200,

@@ -35,17 +35,24 @@ final List<Map<String, dynamic>> routes = [
   },
   {
     'path': 'PartnerCategoriesCreateScreen',
-    'page': (BuildContext context) => PartnerCategoriesCreateScreen(),
+    'page': (BuildContext context) => PartnerCategoriesCreatePage(),
   },
   /// todo: fernando herrera
     {
     'path': 'ProductsScreen',
-    'page': (BuildContext context) => ProductsScreen(),
+    'page': (BuildContext context) => PartnerProductsCreatePage(),
   },
-  {
-    'path': 'BackgroundPage',
-    'page': (BuildContext context) => BackgroundPage(),
+  
+    {
+    'path': 'PartnerCategoriesCreatePage',
+    'page': (BuildContext context) => PartnerCategoriesCreatePage(),
   },
+
+  {//HOME PARTNER
+    'path': 'PartnerProfileInfoPage',
+    'page': (BuildContext context) => PartnerProfileInfoPage(),
+  },
+
 
 
 
