@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       //definimos la ruta cambiando
       debugShowCheckedModeBanner: false,
       title: 'WAR CORPORATION',
-      initialRoute: 'PartnerProfileInfoPage',
+      initialRoute: 'PartnerHomePage',
       onGenerateRoute: (settings) {
         final route =
         routes.firstWhere((route) => route['path'] == settings.name);

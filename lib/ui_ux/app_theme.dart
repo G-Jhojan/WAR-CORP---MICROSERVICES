@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static ThemeData getTheme() {
     return ThemeData(
+      appBarTheme: const AppBarTheme(
+        elevation: 0,
+        color: Colors.indigo
+      ),
       scaffoldBackgroundColor: Colors.grey[300],
       primaryColor: Colors.indigo,
       colorScheme: const ColorScheme(

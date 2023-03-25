@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:war_corporation_microservices/pages/partner/categories/create/partner_categories_create_page.dart';
 import 'package:war_corporation_microservices/pages/partner/home/partner_home_controller.dart';
+import 'package:war_corporation_microservices/pages/partner/orders/create/partner_orders_create_page.dart';
 import 'package:war_corporation_microservices/pages/partner/orders/list/partner_orders_list_page.dart';
 import 'package:war_corporation_microservices/pages/partner/products/create/partner_products_create_page.dart';
 import 'package:war_corporation_microservices/pages/partner/profile/info/partner_profile_info_page.dart';
@@ -24,6 +25,7 @@ class PartnerHomePage extends StatelessWidget {
             PartnerCategoriesCreatePage(),
             PartnerOrdersListPage(),
             PartnerProductsCreatePage(),
+            PartnerOrdersCreatePage(),
             PartnerProfileInfoPage()
           ],
         ),
@@ -53,12 +55,22 @@ class PartnerHomePage extends StatelessWidget {
           activeColor: Colors.white,
           inactiveColor: Colors.black
     ),
+
       BottomNavyBarItem (
           icon: const Icon(Icons.playlist_add_circle_outlined),
           title: const Text('PRODUCTOS'),
           activeColor: Colors.white,
           inactiveColor: Colors.black
-    ), BottomNavyBarItem (
+    ), 
+
+    BottomNavyBarItem (
+          icon: const Icon(Icons.abc_rounded),
+          title: const Text('N producto'),
+          activeColor: Colors.white,
+          inactiveColor: Colors.black
+    ),
+
+    BottomNavyBarItem (
           icon: const Icon(Icons.person_outline),
           title: const Text('PERFIL'),
           activeColor: Colors.white,

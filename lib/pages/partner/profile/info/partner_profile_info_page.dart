@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:war_corporation_microservices/pages/partner/profile/info/partner_profile_info_controller.dart';
 import 'package:war_corporation_microservices/pages/widgets/btn_indigo.dart';
 import 'package:war_corporation_microservices/pages/widgets/custom_input.dart';
 import 'package:war_corporation_microservices/pages/widgets/custom_labels.dart';

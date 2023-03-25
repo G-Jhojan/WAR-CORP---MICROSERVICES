@@ -26,7 +26,6 @@ class PartnerCategoriesCreatePage extends StatelessWidget {
   }
 }
 
-
 class _BoxForm extends StatelessWidget {
   final EstiloTextos estilo = EstiloTextos();
   final String titulo;
@@ -48,7 +47,6 @@ class _BoxForm extends StatelessWidget {
     );
   }
 }
-
 
 
 class _CardBox extends StatelessWidget {
